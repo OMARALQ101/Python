@@ -10,7 +10,6 @@ def main():
         headers = line.strip("\n").split(",")
         data = []
 
-        line = f.readline()
         for line in f:
             token = line.strip("\n").split(",")
             d = {headers[0]: token[0], 
